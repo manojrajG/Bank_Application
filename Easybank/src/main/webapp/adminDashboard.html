@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Application - Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #032859;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #08678C;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+        }
+
+        .sidebar .logo {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar nav ul li {
+            margin: 1rem 0;
+        }
+
+        .sidebar nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .sidebar nav ul li a .icon {
+            margin-right: 1rem;
+        }
+
+        .sidebar nav ul li a:hover {
+            background-color: #34495e;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 2rem;
+            background-color: white;
+            overflow-y: auto;
+        }
+
+        .main-content h1 {
+            color: #08678C;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">Admin Panel</div>
+        <nav>
+            <ul>
+                <li><a href="registerCustomer.html"><span class="icon">&#128200;</span> Register Customer</a></li>
+                <li><a href="modifyCustomer.html"><span class="icon">&#128179;</span> Modify Customer</a></li>
+                <li><a href="deleteCustomer.html"><span class="icon">&#128221;</span> Delete Customer</a></li>
+                <li><a href="seeCustomer.html"><span class="icon">&#128736;</span> View Customer</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <h1>Welcome to the Admin Dashboard</h1>
+        <p>Use the sidebar to navigate through the different sections.</p>
+    </div>
+</body>
+</html>
