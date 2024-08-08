@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Application - Admin Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Montserrat, Georgia;
+            margin: 0;
+            padding: 0;
+            background-color: #032859;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #08678C;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        .form-container h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .form-container label {
+            display: block;
+            margin-top: 1rem;
+            color: white;
+        }
+
+        .form-container input {
+            width: 90%;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-container .password-container {
+            position: relative;
+        }
+
+        .form-container .password-container input {
+            padding-right: 2.5rem;
+        }
+
+        .form-container .password-container .toggle-password {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 0.5rem;
+            border: none;
+            background-color: #011126;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        .form-container button:hover {
+            background-color: #34495e;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Modify Customer</h2>
+        <form action="GetCustomerDetails" method="post">
+            <input type="text" id="accountNumber" name="accountNumber" placeholder="Enter Account Number" required>
+            <button type="submit">Fetch Details</button>
+        </form>
+    </div>
+</body>
+</html>
